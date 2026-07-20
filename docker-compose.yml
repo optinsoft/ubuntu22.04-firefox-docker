@@ -1,0 +1,26 @@
+services:
+
+  firefox:
+    build:
+      context: .
+      args:
+        FIREFOX_VERSION: ${FIREFOX_VERSION}
+        FIREFOX_LANG: ${FIREFOX_LANG}
+        TZ: ${TZ}
+
+    container_name: firefox
+    
+    ports:
+      - "3000:3000"
+      - "5900:5900"
+
+    environment:
+      DISPLAY_WIDTH: 1920
+      DISPLAY_HEIGHT: 1080
+      DISPLAY_DEPTH: 24
+
+    volumes:
+      - ./config/profile:/config/profile
+      - ./config/downloads:/config/downloads
+
+    restart: unless-stopped
