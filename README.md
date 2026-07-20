@@ -335,17 +335,6 @@ For production or remote access:
 
 ---
 
-# Why Ubuntu 22.04?
-
-Advantages:
-
-* Stable LTS base
-* Large package ecosystem
-* Easy customization
-* Better compatibility with Linux applications
-
----
-
 # License
 
 MIT License
