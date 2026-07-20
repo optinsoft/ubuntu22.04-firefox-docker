@@ -4,9 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 ARG FIREFOX_VERSION=128.0.3
 ARG FIREFOX_LANG=en-US
-ARG TZ=Europe/London
 
-ENV TZ=${TZ}
 ENV DISPLAY=:0
 
 RUN apt-get update && apt-get install -y \
@@ -33,9 +31,6 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 
-RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime \
-    && echo ${TZ} > /etc/timezone
-	
 RUN ln -sf /usr/share/novnc/vnc.html /usr/share/novnc/index.html
 
 # locale

@@ -6,7 +6,6 @@ services:
       args:
         FIREFOX_VERSION: ${FIREFOX_VERSION}
         FIREFOX_LANG: ${FIREFOX_LANG}
-        TZ: ${TZ}
 
     container_name: firefox
     
@@ -15,6 +14,7 @@ services:
       - "5900:5900"
 
     environment:
+      TZ: ${TZ}
       DISPLAY_WIDTH: 1920
       DISPLAY_HEIGHT: 1080
       DISPLAY_DEPTH: 24
