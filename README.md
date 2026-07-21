@@ -11,8 +11,6 @@ Access Firefox through:
 - Isolated Docker environment
 - Persistent Firefox profile
 
-This project is inspired by [jlesage/docker-firefox], but uses **Ubuntu 22.04** as the base image and provides full control over Firefox versions and system packages.
-
 ---
 
 ## Features
@@ -347,7 +345,6 @@ You are free to use, modify, and distribute this project.
 
 Inspired by:
 
-* jlesage/docker-firefox
 * noVNC
 * x11vnc
 * Mozilla Firefox

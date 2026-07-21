@@ -15,9 +15,9 @@ services:
 
     environment:
       TZ: ${TZ}
-      DISPLAY_WIDTH: 1920
-      DISPLAY_HEIGHT: 1080
-      DISPLAY_DEPTH: 24
+      DISPLAY_WIDTH: ${DISPLAY_WIDTH}
+      DISPLAY_HEIGHT: ${DISPLAY_HEIGHT}
+      DISPLAY_DEPTH: ${DISPLAY_DEPTH}
 
     volumes:
       - ./config/profile:/config/profile

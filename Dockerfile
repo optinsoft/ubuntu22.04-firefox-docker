@@ -31,9 +31,11 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 
+# noVNC start page
 RUN ln -sf /usr/share/novnc/vnc.html /usr/share/novnc/index.html
 
-# locale
+
+# locales
 RUN locale-gen en_US.UTF-8 ru_RU.UTF-8
 
 ENV LANG=en_US.UTF-8
