@@ -33,7 +33,7 @@ Access Firefox through:
 
 ```
 Host OS
-||
+|
 | http://localhost:3000
 |
 noVNC
