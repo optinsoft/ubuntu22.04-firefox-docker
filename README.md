@@ -319,6 +319,32 @@ docker compose restart
 
 ---
 
+# Proxy Configuration
+
+Route Firefox traffic through a proxy server using `.env` (supports HTTP and SOCKS5):
+
+```env
+FIREFOX_PROXY=http://192.168.1.100:8080
+# Or for SOCKS5:
+# FIREFOX_PROXY=socks5://192.168.1.100:1080
+```
+
+If the proxy server is running on your host machine, connect to it using `host.docker.internal`:
+
+```env
+FIREFOX_PROXY=http://docker.internal
+```
+
+*Note: To leave the proxy disabled, simply keep the `FIREFOX_PROXY` variable empty or commented out.*
+
+Restart the container:
+
+```bash
+docker compose up -d
+```
+
+---
+
 # Security Notes
 
 By default:

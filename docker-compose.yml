@@ -18,6 +18,7 @@ services:
       DISPLAY_WIDTH: ${DISPLAY_WIDTH}
       DISPLAY_HEIGHT: ${DISPLAY_HEIGHT}
       DISPLAY_DEPTH: ${DISPLAY_DEPTH}
+      FIREFOX_PROXY: ${FIREFOX_PROXY:-}
 
     volumes:
       - ./config/profile:/config/profile
