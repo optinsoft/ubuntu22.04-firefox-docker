@@ -106,6 +106,7 @@ localhost:5900
 Compatible clients:
 
 * TigerVNC Viewer
+* TightVNC Viewer
 * RealVNC Viewer
 * Remmina
 * Any standard VNC client
